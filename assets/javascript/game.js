@@ -1,5 +1,5 @@
 //Creating the list of words
-var words = [
+var wordList = [
     "cheese",
     "fruit",
     "carrots",
@@ -7,14 +7,38 @@ var words = [
     "bread"
 ]                                                   
 
+var alphabet = [
+    "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
+]
 //setting a variable to make the array random
-var word = words[Math.floor(Math.random() * words.length)]
+var randWord = Math.floor(Math.random() * wordList.length)
+
+var word = wordList[randWord]
+
+var guessesRemain;
+
+var
+
+var underscore = []
+
+console.log(word)
+
+
 
 // Get Js to recognize a Key Press
     // if keypress equals a letter of the array(word) print to screen 
         // else lower number of guesses by 1 and add letter to already guessed
- document.onkeypress = function(a) {
-       
+ document.onkeypress = function () {
+    for (var i = 0; i < word.length; i++) {
+        if {
+            event.keyCode = word[]
+        }else {
+            return underscore;
+        }
+
+    }
+
+    return underscore
  }
 // Track and Display Wins
 
@@ -25,4 +49,4 @@ var word = words[Math.floor(Math.random() * words.length)]
 // display letters already guessed, and stop repeat letters counting as a guess
 
 
-var word =word[Math.floor(Math.random() * words.length)]
+//  

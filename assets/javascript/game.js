@@ -1,10 +1,14 @@
 //Creating the list of words
 var wordList = [
-    "cheese",
-    "fruit",
-    "carrots",
-    "meat",
-    "bread"
+    "Blue",
+    "Mozzarella",
+    "Cheddar",
+    "Swiss",
+    "Parmasean",
+    "Provolone",
+    "Munster",
+    "Gouda",
+    "Romano"
 ]                                                   
 
 var alphabet = [
@@ -17,7 +21,7 @@ var word = wordList[randWord]
 
 var guessesRemain;
 
-var
+
 
 var underscore = []
 
@@ -28,18 +32,18 @@ console.log(word)
 // Get Js to recognize a Key Press
     // if keypress equals a letter of the array(word) print to screen 
         // else lower number of guesses by 1 and add letter to already guessed
- document.onkeypress = function () {
-    for (var i = 0; i < word.length; i++) {
-        if {
-            event.keyCode = word[]
-        }else {
-            return underscore;
-        }
+//  document.onkeypress = function () {
+//     for (var i = 0; i < word.length; i++) {
+//         if {
+//             event.keyCode = word[]
+//         }else {
+//             return underscore;
+//         }
 
-    }
+//     }
 
-    return underscore
- }
+//     return underscore
+//  }
 // Track and Display Wins
 
 // Display Blank Word Spaces and get Js to display correct letter when neccesary

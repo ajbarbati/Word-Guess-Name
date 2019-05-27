@@ -1,5 +1,14 @@
 /* Global Stuff */
 * {
-
+    background-image: url("../images/background-image.jpg")
 }
 
+.grid-container {
+    display: grid;
+    grid-gap: 50px;
+    justify-content: space-evenly;
+}
+
+.grid-container > div {
+    color: green;
+}

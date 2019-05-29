@@ -45,10 +45,26 @@ while (remainingLetters > 0) {
         //alert them to guess a single letter only;
         alert("Please enter a single letter");
     //valid guess
+    }else {
+        //update the game state with the guess
+        for (var j = 0; j < word.length; j++) {
+                //if the letter they guessed is in the word at that point or index
+                if (word[j] === guess) {
+                    //update the answer array with the letter they guessed at that point or index
+                    answerArray[j] = guess;
+                    //subtract one from remaining letters
+                    remainingLetters--;
+                }
+        }
     }
+    
     
 }
 
+// <<<<<<
+
+// let player know word 
+alert(answerArray.join(""));
 
 
 // Get Js to recognize a Key Press

@@ -23,6 +23,31 @@ for (var i = 0; i < word.length; i++) {
     answerArray[i] = "_"
 }
 
+// create var to show letters remaining
+var remainingLetters = word.length;
+
+// >>>>>
+
+//while there are letters left to be guessed
+while (remainingLetters > 0) {
+    //show player progress
+    alert(answerArray.join(" "));
+
+    // get a guess from player
+    var guess = prompt("Guess a letter, or click Cancel to stop playing");
+
+    //if the guess is blank
+    if (guess == null) {
+        //exit
+        break;
+    //if the guess is more than one letter or no letters
+    }else if (guess.length !== 1) {
+        //alert them to guess a single letter only;
+        alert("Please enter a single letter");
+    //valid guess
+    }
+    
+}
 
 
 

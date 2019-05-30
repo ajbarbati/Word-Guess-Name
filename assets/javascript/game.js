@@ -23,6 +23,8 @@ for (var i = 0; i < word.length; i++) {
     answerArray[i] = "_"
 }
 
+var count = 0
+
 // create var to show letters remaining
 var remainingLetters = word.length;
 
@@ -52,20 +54,30 @@ while (remainingLetters > 0) {
                 if (word[j] === guess) {
                     //update the answer array with the letter they guessed at that point or index
                     answerArray[j] = guess;
+
+                    
                     //subtract one from remaining letters
                     remainingLetters--;
                 }
         }
+        
     }
-    
+    count++
+        document.getElementById("item-2").innerHTML = "No. of guesses" + count
+    if (count > 5)
+    {
+        document.getElementById("item-4").innerHTML = "Farts"
+    }
     
 }
 
 // <<<<<<
-
+document.getElementById("sign").innerHTML = answerArray.join("")
 // let player know word 
 alert(answerArray.join(""));
 //congradulate the player
+
+
 alert("Good job! the answer was " + word);
 
 

@@ -18,7 +18,7 @@ var words = [
 var word = words[Math.floor(Math.random() * words.length)]
 
 //making an array to show underscores
-var answerArray = [];
+var answerArray = []
 for (var i = 0; i < word.length; i++) {
     answerArray[i] = "_"
 }
@@ -26,17 +26,17 @@ for (var i = 0; i < word.length; i++) {
 var count = 0
 
 // create var to show letters remaining
-var remainingLetters = word.length;
+var remainingLetters = word.length
 
 // >>>>>
 
 //while there are letters left to be guessed
 while (remainingLetters > 0) {
     //show player progress
-    alert(answerArray.join(" "));
+    alert(answerArray.join(" "))
 
     // get a guess from player
-    var guess = prompt("Guess a letter, or click Cancel to stop playing");
+    var guess = prompt("Guess a letter, or click Cancel to stop playing")
 
     //if the guess is blank
     if (guess == null) {
@@ -45,7 +45,7 @@ while (remainingLetters > 0) {
     //if the guess is more than one letter or no letters
     }else if (guess.length !== 1) {
         //alert them to guess a single letter only;
-        alert("Please enter a single letter");
+        alert("Please enter a single letter")
     //valid guess
     }else {
         //update the game state with the guess
@@ -53,11 +53,11 @@ while (remainingLetters > 0) {
                 //if the letter they guessed is in the word at that point or index
                 if (word[j] === guess) {
                     //update the answer array with the letter they guessed at that point or index
-                    answerArray[j] = guess;
+                    answerArray[j] = guess
 
                     
                     //subtract one from remaining letters
-                    remainingLetters--;
+                    remainingLetters--
                 }
         }
         
@@ -83,9 +83,29 @@ alert("Good job! the answer was " + word);
 // this is a test chaange
 
 
+// var guessLeft = 9
+// var losses = 0
+
+// function guess () {
+//     guessLeft:
+// }
+
+// function reset () {
+//     guessLeft = 9
+// }
+
+// function lose () {
+//     losses++
+//     reset()
+// }
+
+// function win () {
+//     win++
+//     reset()
+// }
 
 
-// Get Js to recognize a Key Press
+// // Get Js to recognize a Key Press
     // if keypress equals a letter of the array(word) print to screen 
         // else lower number of guesses by 1 and add letter to already guessed
 //  document.onkeypress = function () {
@@ -93,7 +113,7 @@ alert("Good job! the answer was " + word);
 //         if {
 //             event.keyCode = word[]
 //         }else {
-//             return underscore;
+//             return underscore
 //         }
 
 //     }

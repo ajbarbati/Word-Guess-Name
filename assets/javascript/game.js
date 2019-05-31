@@ -83,6 +83,7 @@ alert("Good job! the answer was " + word);
 // this is a test chaange
 
 
+
 // var guessLeft = 9
 // var losses = 0
 

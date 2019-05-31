@@ -80,6 +80,9 @@ alert(answerArray.join(""));
 
 alert("Good job! the answer was " + word);
 
+// this is a test chaange
+
+
 
 
 // Get Js to recognize a Key Press
